@@ -1,0 +1,224 @@
+/* ---------- Reset y Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4efe3;
+  color: #222222;
+  line-height: 1.5;
+  /* Flexbox para mantener el footer abajo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El main actúa como un muelle que empuja el footer hacia abajo */
+main {
+  flex: 1;
+}
+
+/* ---------- Cabecera ---------- */
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #2d4a3e;
+  color: white;
+}
+
+.logo {
+  width: 250px;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+/* ---------- Menú ---------- */
+.menu {
+  background-color: #5c3d26;
+  color: white;
+}
+
+.menu > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.menu > div > div {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu > div > div:hover {
+  color: #a84c14;
+}
+
+/* ---------- Estilos Generales de Secciones ---------- */
+.pantalla {
+  padding: 2rem;
+}
+
+.pantalla h2 {
+  color: #2d4a3e;
+  margin-bottom: 1rem;
+}
+
+.boton {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  background-color: #a84c14;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Pantalla 1: Portada ---------- */
+.portada {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.portada-texto {
+  width: 50%;
+}
+
+.portada-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.datos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.datos > div {
+  background-color: #2d4a3e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ---------- Pantalla 2: Rutas ---------- */
+.rutas {
+  background-color: #e4dccb;
+  text-align: center;
+}
+
+.rejilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.tarjeta img {
+  width: 100%;
+}
+
+.tarjeta img.foto-pequena {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+/* ---------- Pantalla 3: Vídeo y Columna Derecha ---------- */
+.extra {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bloque-video {
+  width: 60%;
+}
+
+.columna-derecha {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.consejos {
+  background-color: #2d4a3e;
+  color: white;
+  padding: 1.5rem;
+}
+
+.caja-formulario {
+  background-color: #e4dccb;
+  padding: 1.5rem;
+}
+
+/* ---------- Formulario ---------- */
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* ---------- Pie de página ---------- */
+footer.pie {
+  background-color: #003831;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Pantalla Media (Tablets) ---------- */
+@media (max-width: 1024px) {
+  .rejilla {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- Móviles y pantallas pequeñas ---------- */
+@media (max-width: 800px) {
+  .portada,
+  .extra {
+    flex-direction: column;
+  }
+
+  .portada-texto,
+  .bloque-video,
+  .columna-derecha {
+    width: 100%;
+  }
+
+  .rejilla {
+    grid-template-columns: 1fr;
+  }
+}

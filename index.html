@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montañeros del Cifp - Rutas por Asturias</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <img
+        src="imagenes_video/logo.jpg"
+        alt="Logotipo Montañeros del Cifp"
+        class="logo"
+        width="200"
+      />
+      <div class="titulos">
+        <h1>Montañeros del Cifp</h1>
+        <p class="lema">Rutas de montaña por Asturias</p>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <div>
+        <div>Inicio</div>
+        <div>Rutas</div>
+        <div>Vídeo</div>
+        <div>Consejos</div>
+        <div>Contacto</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="pantalla portada">
+        <div class="portada-texto">
+          <h2>Descubre Asturias andando</h2>
+          <p>
+            Somos un pequeño club de amigos que organiza salidas a la montaña
+            todos los fines de semana. Desde paseos tranquilos hasta rutas
+            largas por los Picos de Europa.
+          </p>
+
+          <div class="datos">
+            <div><strong>+40</strong> rutas</div>
+            <div><strong>120</strong> socios</div>
+            <div><strong>8</strong> años de club</div>
+          </div>
+        </div>
+
+        <div class="portada-img">
+          <img src="imagenes_video/py1.jpg" alt="Picos de Europa" />
+          <p><em>Los Picos de Europa, nuestro lugar favorito.</em></p>
+        </div>
+      </section>
+
+      <section class="pantalla rutas">
+        <h2>Nuestras rutas</h2>
+        <p class="intro">
+          Estas son tres de las rutas que más repetimos durante el año.
+        </p>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <img src="imagenes_video/py2.jpg" alt="Naranjo de Bulnes" />
+
+            <img
+              src="imagenes_video/ruta1.jpg"
+              alt="Foto de la ruta 1"
+              class="foto-pequena"
+            />
+
+            <div class="tarjeta-cuerpo">
+              <h3>Naranjo de Bulnes</h3>
+              <p>Subida clásica desde Pandébano hasta la gran pared caliza.</p>
+              <div>
+                <div>Dificultad: Alta</div>
+                <div>Distancia: 14 km</div>
+                <div>Duración: 7 horas</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="imagenes_video/py3.jpg" alt="Lagos de Covadonga" />
+
+            <img
+              src="imagenes_video/ruta2.jpg"
+              alt="Foto de la ruta 2"
+              class="foto-pequena"
+            />
+
+            <div class="tarjeta-cuerpo">
+              <h3>Lagos de Covadonga</h3>
+              <p>Ruta circular que pasa por el lago Enol y el lago Ercina.</p>
+              <div>
+                <div>Dificultad: Baja</div>
+                <div>Distancia: 6 km</div>
+                <div>Duración: 2 horas</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="imagenes_video/py4.jpg" alt="Ruta del Cares" />
+
+            <img
+              src="imagenes_video/ruta3.jpg"
+              alt="Foto de la ruta 3"
+              class="foto-pequena"
+            />
+
+            <div class="tarjeta-cuerpo">
+              <h3>Ruta del Cares</h3>
+              <p>Camino excavado en la roca entre Poncebos y Caín.</p>
+              <div>
+                <div>Dificultad: Media</div>
+                <div>Distancia: 12 km</div>
+                <div>Duración: 4 horas</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pantalla extra">
+        <div class="bloque-video">
+          <h2>Así son nuestras salidas</h2>
+
+          <iframe
+            width="330"
+            height="210"
+            src="https://www.youtube.com/embed/Ncquu9wMJP4?si=KpF6dYOvCf_EhQM9"
+            title="YouTube video player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <p class="pie-video">
+            Vídeo de una salida de primavera por los Picos de Europa.
+          </p>
+        </div>
+
+        <div class="columna-derecha">
+          <!-- Cuadrado 1: Consejos (Verde) -->
+          <div class="consejos">
+            <h2>Consejos antes de salir</h2>
+            <div>
+              <div>1. Mira siempre el tiempo, en Asturias cambia rápido.</div>
+              <div>2. Lleva agua y comida de sobra.</div>
+              <div>3. Usa calzado de montaña y chaqueta impermeable.</div>
+              <div>4. Avisa a alguien de la ruta que vas a hacer.</div>
+            </div>
+          </div>
+
+          <!-- Cuadrado 2: Formulario (Beige) -->
+          <div class="caja-formulario">
+            <h2>Contacto</h2>
+            <form class="formulario">
+              <label>Nombre:</label>
+              <input type="text" name="nombre" required />
+
+              <label>DNI:</label>
+              <input type="text" name="dni" required />
+
+              <label>Correo:</label>
+              <input type="email" name="correo" required />
+
+              <button type="submit" class="boton">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- AQUÍ CERRAMOS LA SECCIÓN EXTRA -->
+    </main>
+    <!-- AQUÍ CERRAMOS EL MAIN -->
+
+    <footer class="pie">
+      <p>&copy; 2026 Montañeros del Cifp · CIFP Avilés</p>
+      <span>Contacto</span>
+
+      <div class="redes">
+        <img src="imagenes_video/red1.jpg" alt="Red social 1" width="40" />
+        <img src="imagenes_video/red2.jpg" alt="Red social 2" width="40" />
+      </div>
+      <!-- AQUÍ CERRAMOS LAS REDES -->
+    </footer>
+  </body>
+</html>
